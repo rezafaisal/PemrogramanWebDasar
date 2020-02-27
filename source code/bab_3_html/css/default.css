@@ -1,0 +1,22 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(../images/bg/bg1.png);
+    background-repeat: no-repeat;
+    width: 99%;
+}
+
+.tombol {
+    background-color: coral;
+    color: #FFFFFF;
+    border-color: tomato;
+    font-family: Arial;
+}
+
+p {
+    font-family: Verdana;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: overline;
+}
