@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Registrasi Event</title>
+        <style>
+            body {
+                background-color: gray;
+                font-family: Verdana;
+            }
+
+            #main_box {
+                width: 50%;
+                margin: auto;
+            }
+
+            .form_box {
+                border: solid 1px #000000;
+                height: 500px;
+                margin-top: 50px;
+                background-color: #FFFFFF;
+            }
+
+            .form_title {
+                height: 30px;
+                border: solid 1px #000000;
+                background-color: #000000;
+                color: #FFFFFF;
+                font-size: 14px;
+                text-align: center;
+                font-weight: bold;
+                padding-top: 10px;
+            }
+
+            .form_content {
+                padding: 30px 0 0 30px;
+            }
+
+            .form_label {
+                width: 100px;
+                display: inline-block;
+                font-size: 12px;
+                color: #000000;
+                font-weight: bold;
+            }
+
+            .form_label_long {
+                font-size: 12px;
+                color: #000000;
+                font-weight: bold;
+            }
+
+            .form_textbox {
+                height: 30px;
+                width: 430px;
+                border: solid 1px #adadad;
+                background-color: #d4d4d4;
+                border-radius: 5px;
+            }
+
+            .form_textbox_short {
+                height: 30px;
+                width: 210px;
+                border: solid 1px #adadad;
+                background-color: #d4d4d4;
+                border-radius: 5px;
+            }
+
+            .separator {
+                clear: both;
+                height: 30px;
+            }
+
+            .form_radio {
+                margin: 0;
+                padding: 0;
+            }
+
+            .form_radio li {
+                list-style: none;
+                display: inline;
+                font-size: 12px;
+            }
+
+            .button_red {
+                padding: 10px 30px 10px 30px;
+                border: solid 1px #ff1a1a;
+                background-color: #fd8080;
+                color: #ffffff;
+                font-size: 12px;
+                font-weight: bold;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .pos_abs1 {
+                width: 100px;
+                height: 100px;
+                background-color: #fdff86;
+                top: 50px;
+                left: 50px;
+                position: absolute;
+                z-index: 1;
+            }
+
+            .pos_abs2 {
+                width: 300px;
+                height: 300px;
+                background-color: #ff6257;
+                top: 10px;
+                left: 10px;
+                position: absolute;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="main_box">
+            <div class="form_box">
+                <div class="form_title">
+                    EVENT REGISTRATION FORM
+                </div>
+                <div class="form_content">
+                    <label class="form_label">Name</label>
+                    <input type="text" name="first_name" class="form_textbox_short">
+                    <input type="text" name="last_name" class="form_textbox_short">
+
+                    <div class="separator"></div>
+
+                    <label class="form_label">Company</label>
+                    <input type="text" name="company" class="form_textbox">
+
+                    <div class="separator"></div>
+
+                    <label class="form_label">Email</label>
+                    <input type="email" name="email" class="form_textbox">
+
+                    <div class="separator"></div>
+
+                    <label class="form_label_long">Are you an existing customer?</label>
+                    <ul class="form_radio">
+                        <li><input type="radio" name="is_exist" value="yes"></li>
+                        <li>Yes</li>
+                        <li><input type="radio" name="is_exist" value="no"></li>
+                        <li>No</li>
+                    </ul>
+
+                    <div class="separator"></div>
+
+                    <input type="button" value="Register" class="button_red">
+                </div>
+            </div>
+        </div>
+
+        <div class="pos_abs1">posisi absolute 1</div>
+        <div class="pos_abs2">posisi absolute</div>
+    </body>
+</html>

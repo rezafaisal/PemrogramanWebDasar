@@ -1,0 +1,23 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.tombol {
+    background-color: coral;
+    color: #FFFFFF;
+    border-color: tomato;
+    font-family: Arial;
+}
+
+p {
+    font-family: Verdana;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+p.kotak {
+    border: 1px solid;
+    min-height: 100px;
+}
