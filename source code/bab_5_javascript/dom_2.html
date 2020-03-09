@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+        <script>
+            function hitung(){
+                bil1 = document.getElementById("textbox_bil1").value;
+                bil2 = document.getElementById("textbox_bil2").value;
+                hasil = bil1 + bil2;
+                document.getElementById("textbox_hasil").value = hasil;
+            }
+        </script>
+    <body>
+        Bilangan 1: <input type="text" name="bil1" id="textbox_bil1">
+        <br>
+        Bilangan 2: <input type="text" name="bil2" id="textbox_bil2">
+        <br>
+        Hasil: <input type="text" name="hasil" id="textbox_hasil">
+        <input type="button" value="get value" onclick="hitung()">
+    </body>
+</html>

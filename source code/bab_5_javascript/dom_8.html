@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+        <style>
+            #chatbox {
+                border: solid 1px #000000;
+                margin: 15px 0 15px 0;
+                padding: 5px;
+            }
+        </style>
+        <script>
+            function sendMessage(){
+                var pesan = document.getElementById("textbox_pesan").value;
+                var newDiv = document.createElement("div"); 
+                var newContent = document.createTextNode(pesan);
+                newDiv.appendChild(newContent); 
+
+                var currentDiv = document.getElementById("div1"); 
+                document.body.insertBefore(newDiv, currentDiv); 
+            }
+        </script>
+    <body>
+        <div>
+            <input type="text" name="pesan" id="textbox_pesan">
+        </div>
+        <input type="button" value="kirim" onclick="sendMessage()">
+        <div id="div1">Hello World</div>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+        <style>
+            .menu {
+                height: 30px;
+                border: solid 1px #000000;
+                margin: 0 0 13px 0;
+                background-color: ;
+            }
+        </style>
+        <script>
+            function set_color(color){
+                col = document.getElementsByClassName("menu");
+                count_col = col.length;
+                for(i=0; i<count_col; i++){
+                    col[i].style.backgroundColor=color;
+                }
+            }
+        </script>
+    <body>
+        <div class="menu">&nbsp;</div>
+        <div class="menu">&nbsp;</div>
+        <div class="menu">&nbsp;</div>
+        <input type="button" value="blue" onclick="set_color('blue')">
+        <input type="button" value="red" onclick="set_color('red')">
+    </body>
+</html>
