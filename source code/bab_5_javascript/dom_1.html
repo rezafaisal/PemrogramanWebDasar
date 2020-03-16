@@ -5,13 +5,18 @@
     </head>
         <script>
             function transfer(){
-                bil1 = document.getElementById("textbox_bil1").value;
-                document.getElementById("textbox_bil2").value = bil1;
+                var bil1 = document.getElementById("textbox_bil1");
+                var bil2 = document.getElementById("textbox_bil2");
+
+                bil2.value = bil1.value;
             }
 
-            function reset() { 
-                document.getElementById("textbox_bil1").value = "";
-                document.getElementById("textbox_bil2").value = "";
+            function reset() {
+                var bil1 = document.getElementById("textbox_bil1");
+                var bil2 = document.getElementById("textbox_bil2"); 
+                
+                bil1.value = "";
+                bil2.value = "";
             }
         </script>
     <body>

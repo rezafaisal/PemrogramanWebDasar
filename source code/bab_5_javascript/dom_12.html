@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+        <script>
+            function init(){
+                var obj = document.querySelectorAll(".p1");
+                var obj_count = obj.length;
+                for(i=0; i<obj_count; i++){
+                    obj[i].innerHTML = "hello world " + i;
+                }
+            }
+        </script>
+    <body onload="init()">
+        <p class="p1"></p>
+        <p class="p1"></p>
+        <p class="p1"></p>
+        <p class="p1"></p>
+        <p></p>
+    </body>
+</html>

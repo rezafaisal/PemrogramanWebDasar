@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+        <script>
+            function init(){
+                var obj1 = document.querySelector(".p1");
+                obj1.innerHTML = "hello world 1";
+
+                var obj2 = document.querySelector("#p2");
+                obj2.innerHTML = "hello world 2";
+            }
+        </script>
+    <body onload="init()">
+        <p class="p1"></p>
+        <p id="p2"></p>
+    </body>
+</html>
