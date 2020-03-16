@@ -6,4 +6,4 @@ Topik yang dibahas pada buku ini adalah:
 3. Javascript
 4. PHP
 
-<img src="https://github.com/rezafaisal/PemrogramanWebDasar/blob/master/images/cover.jpg" width="400" />
+<img src="https://github.com/rezafaisal/PemrogramanWebDasar/blob/master/images/cover-ver2.jpg" width="400" />
