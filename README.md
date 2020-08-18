@@ -6,4 +6,4 @@ Topik yang dibahas pada buku ini adalah:
 3. Javascript
 4. Bootstrap 4
 
-<img src="https://github.com/rezafaisal/PemrogramanWebDasar/blob/master/images/cover-ver3.JPG" width="400" />
+<img src="https://github.com/rezafaisal/PemrogramanWebDasar/blob/master/images/cover-final.JPG" width="400" />
