@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>CSS - Combinator Selector</title>
+        <style>
+            div p {
+                border:solid 5px #000000;
+                padding: 5px;
+            }
+
+            div > p {
+                background-color: red;
+                color:white;
+            }
+
+            div + p {
+                background-color: blue;
+                color:yellow;
+            }
+
+            div ~ p {
+                font-style: italic;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <p>Paragraf 0</p>
+        <div>
+            <p>Paragraf 1</p>
+            <p id="p2">Paragraf 2</p>
+            <b>
+                <p class="p3">Paragraf 3</p>
+            </b>
+        </div>
+        <p>Paragraf 4</p>
+        <p>Paragraf 5</p>
+        <div>
+            <p>Paragraf 6</p>
+        </div>
+        <span>separator</span>
+        <p>Paragraf 7</p>
+    </body>
+</html>

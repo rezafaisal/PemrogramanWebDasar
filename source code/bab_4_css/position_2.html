@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Position</title>
+        <style>
+            div {
+                border: solid 1px #000000;
+                padding: 5px;
+                margin: 5px
+            }
+
+            .parent {
+                width: 90%;
+                margin:auto;
+                height: 100px;
+                position: relative;
+            }
+
+            .fixed {
+                width: 100px;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+            }
+
+            .absolute {
+                width: 100px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="parent">
+            <div class="fixed">
+                fixed
+            </div>
+            <div class="absolute">
+                absolute
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Position</title>
+        <style>
+            div {
+                border: solid 1px #000000;
+                padding: 5px;
+                margin: 0 0 13px 0;
+            }
+
+            .div1 {
+                width: 100px;
+                position: static;
+                left: 50px;
+                top: 50px;
+            }
+
+            .div2 {
+                width: 200px;
+                height: 100px;
+                position: relative;
+                left: 20px;
+                top: 20px;
+            }
+
+            .div3 {
+                width: 100px;
+                position: relative;
+                left: 50px;
+                top: 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="div1">
+            Element div 1
+        </div>
+        <div class="div2">
+            <div class="div3">
+                Element div 2
+            </div>
+        </div>
+    </body>
+</html>

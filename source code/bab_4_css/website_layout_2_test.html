@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Website Layout</title>
+        <style>
+            body {
+                background-image: url(images/movie/movie-bg.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: small;
+            }
+
+            #main-container {
+                position: absolute; 
+                top: 0; 
+                left: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.6);
+                color: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            #header {
+                background-color: black;
+                width: 100%;
+            }
+
+            #logo {
+                float: left;
+                padding: 7px;
+            }
+
+            #menu {
+                float: left;
+                margin-left: 50px;
+                padding: 7px;
+            }
+
+            #menu ul {
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+            }
+
+            #menu ul li {
+                float: left;
+                padding: 5px;
+                margin-right: 25px;
+                text-align: center;
+                color: grey;
+                font-weight: bolder;
+            }
+
+            #menu ul li:hover {
+                color: white;
+                font-weight: bolder;
+            }
+
+            #search {
+                float: right;
+                padding: 7px;
+            }
+
+            #search input[type=button] {
+                background-color: lightseagreen;
+                border: solid 1px lightseagreen;
+                border-radius: 5px;
+                height: 25px;
+                padding-left: 15px;
+                padding-right: 15px;
+                color: white;
+            }
+
+            .separator {
+                clear: both;
+            }
+
+            #content-container {
+                width: 90%;
+                margin:auto
+            }
+
+            #video-player {
+                margin-top: 32px;
+                background-color: black;
+                border: solid 1px black;
+                border-radius: 10px;
+                padding: 10px;
+                box-shadow: 5px 10px 18px black;
+            }
+
+            #description-container {
+                margin-top: 32px;
+                background-color: rgba(0, 0, 0, 0.8);
+                border: solid 1px black;
+                border-radius: 10px;
+                padding: 10px;
+                box-shadow: 5px 10px 18px black;
+            }
+
+            .movie-poster {
+                width: 13%;
+                float: left;
+            }
+
+            .description {
+                width: 85%;
+                float: left;
+                padding-left: 13px;
+            }
+
+            .movie-title {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 23px;
+                font-weight: lighter;
+            }
+
+            #movie-list-container {
+                width: 100%;
+                margin-top: 32px;
+            }
+
+            .movie-item {
+                width: 135px;
+                float: left;
+                margin-top: 32px;
+                margin-right: 23px;
+                background-color: black;
+                box-shadow: 5px 10px 18px black;
+                position: relative;
+            }
+
+            .movie-item img {
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .movie-item .title {
+                background-color: white;
+                color: black;
+                text-align: center;
+                width: 100%;
+                border-radius: 5px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+
+            .movie-item .title a {
+                text-decoration: none;
+                color: black;
+            }
+
+            .movie-item .title a:hover {
+                text-decoration: underline;
+                color: black;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="main-container">
+            <!-- header - start -->
+            <div id="header">
+                <!-- logo - start -->
+                <div id="logo">
+                    <img src="images/movie/logo.png" height="30px">
+                </div>
+                <!-- logo - end -->
+
+                <!-- menu - start -->
+                <div id="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Movies</li>
+                        <li>TV Shows</li>
+                        <li>TV Episodes</li>
+                    </ul>
+                </div>
+                <!-- menu - end -->
+
+                <!-- search - start -->
+                <div id="search">
+                    <form method="POST">
+                        <input type="text" name="keyword">
+                        <input type="button" value="Search">
+                    </form>
+                </div>
+                <!-- search - end -->
+
+                <div class="separator"></div>
+            </div>
+            <!-- header - end  -->
+
+            <!-- content - start -->
+            <div id="content-container">
+                <!-- video player - start -->
+                <div id="video-player">
+                    <video width="100%" controls>
+                        <source src="images/movie/movie.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>                
+                </div>
+                <!-- video player - end -->
+
+                <!-- deskripsi film - start -->
+                <div id="description-container">
+                    <img src="images/movie/movie-bg.jpg" class="movie-poster">
+                    <div class="description">
+                        <h4 class="movie-title">Artemis Fowl (2020)</h4>
+                        <p>
+                            Rated:  5.1 of 10 with 5,827 votes.
+                        </p>
+                        <p>
+                            With the help of his loyal protector Butler, 12-year-old genius Artemis Fowl, descendant of a long line of criminal masterminds, seeks to find his mysteriously disappeared father, and in doing so, uncovers an ancient, underground civilization-the amazingly advanced world of fairies. Deducing that his father's disappearance is somehow connected to the secretive, reclusive fairy world, cunning Artemis concocts a dangerous plan-so dangerous that he ultimately finds himself in a perilous war of wits with the all-powerful fairies.
+                        </p>
+                    </div>
+                    <div class="separator"></div>
+                </div>
+                <!-- deskripsi film - end -->
+
+                <!-- daftar film - start -->
+                <div id="movie-list-container">
+                    <div class="movie-item">
+                        <img src="images/movie/m-1.jpg">
+                        <div class="title">
+                            <a href="#">Movie 1 (2020)</a>
+                        </div>
+                    </div>
+
+                    <div class="movie-item">
+                        <img src="images/movie/m-2.jpg">
+                        <div class="title">
+                            <a href="#">Movie 2 (2020)</a>
+                        </div>
+                    </div>
+
+                    <div class="movie-item">
+                        <img src="images/movie/m-3.jpg">
+                        <div class="title">
+                            <a href="#">Movie 3 (2020)</a>
+                        </div>
+                    </div>
+
+                    <div class="movie-item">
+                        <img src="images/movie/m-8.jpg">
+                        <div class="title">
+                            <a href="#">Movie 4 (2020)</a>
+                        </div>
+                    </div>
+
+                    <div class="movie-item">
+                        <img src="images/movie/m-5.jpg">
+                        <div class="title">
+                            <a href="#">Movie 5 (2020)</a>
+                        </div>
+                    </div>
+
+                    <div class="movie-item">
+                        <img src="images/movie/m-6.jpg">
+                        <div class="title">
+                            <a href="#">Movie 6 (2020)</a>
+                        </div>
+                    </div>
+
+                    <div class="movie-item">
+                        <img src="images/movie/m-7.jpg">
+                        <div class="title">
+                            <a href="#">Movie 7 (2020)</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- daftar film - end -->
+                
+                <div class="separator" style="margin-bottom: 50px;"></div>
+            </div>
+            <!-- content - end -->
+        </div>
+    </body>
+</html>
